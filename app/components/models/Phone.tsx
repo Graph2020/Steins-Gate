@@ -18,7 +18,7 @@ type GLTFResult = GLTF & {
 
 export function Phone(props: PhoneProps) {
   const { nodes, materials } = useGLTF(
-    "/steinsgate_phone.glb",
+    "/models/steinsgate_phone.glb",
   ) as unknown as GLTFResult;
   return (
     <group {...props} dispose={null}>
@@ -827,4 +827,4 @@ export function Phone(props: PhoneProps) {
   );
 }
 
-useGLTF.preload("/steinsgate_phone.glb");
+useGLTF.preload("/models/steinsgate_phone.glb");
