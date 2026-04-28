@@ -1,13 +1,11 @@
 "use client";
-import { Canvas } from "@react-three/fiber";
+
 import type { JSX } from "react";
 
-import React from "react";
 import { Phone } from "../components/models/Phone";
 import { Peper } from "../components/models/Peper";
-
-import { Environment, Float, OrbitControls } from "@react-three/drei";
 import ModelElement from "../components/ModelElement";
+
 import ButtonLab from "../components/ButtonLab";
 
 const Hero = (): JSX.Element => {
@@ -26,7 +24,7 @@ const Hero = (): JSX.Element => {
           position="-bottom-3 -left-3"
           scale={8}
           model={Peper}
-          modelPosition={[0, -0.2, 0]}
+          modelPosition={[0, -0.3, 0]}
         />
       </div>
       <div className="dark:text-white-50 font-secondary space-y-3 text-center text-sm text-black">

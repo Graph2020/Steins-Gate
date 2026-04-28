@@ -26,6 +26,10 @@
   @apply w-xs text-lg sm:w-lg md:text-xl;
 }
 
+@utility title-text {
+  @apply text-white-50 font-secondary text-4xl sm:text-5xl md:text-6xl;
+}
+
 @layer components {
   .main-btn {
     @apply border-main text-main inline-flex w-fit cursor-pointer items-center justify-center gap-2 border px-7 py-3 text-lg uppercase lg:px-10;

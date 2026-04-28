@@ -4,10 +4,10 @@ import { TiThMenuOutline } from "react-icons/ti";
 
 const NavBar = () => {
   return (
-    <nav className="w-full flex items-center p-3 justify-between h-12 bg-neutral text-main">
+    <nav className="bg-neutral text-main flex h-12 w-full items-center justify-between p-3 shadow-[0_0.5px_4px_var(--color-main)]">
       <div className="flex items-center gap-2">
         <BsTerminal className="size-6" />
-        <span className="font-bold font-main text-2xl">Future GadgetLab</span>
+        <span className="font-main text-2xl font-bold">Future GadgetLab</span>
       </div>
       <TiThMenuOutline className="size-6" />
     </nav>

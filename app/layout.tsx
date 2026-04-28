@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter, BenchNine } from "next/font/google";
 import "./globals.css";
 import NavBar from "./sections/NavBar";
 import Provider from "./Provider";
+import Footer from "./sections/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -36,10 +37,11 @@ export default function RootLayout({
       lang="en"
       className={`${grotesk.variable} ${inter.variable} ${benchNine.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <Provider>
           <NavBar />
           {children}
+          <Footer />
         </Provider>
       </body>
     </html>
